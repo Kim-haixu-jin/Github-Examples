@@ -5,6 +5,7 @@ on: push
 jobs:
   sayHi:
     runs-on: ubuntu-latest
+    needs: sayThere
     steps:
       - name: stepA
         run: echo 'Hi'
