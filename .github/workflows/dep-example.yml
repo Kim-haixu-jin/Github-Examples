@@ -1,0 +1,15 @@
+name: "Dep Jobs Example"
+
+on: push
+
+jobs:
+  sayHi:
+    runs-on: ubuntu-latest
+    steps:
+      - name: stepA
+        run: echo 'Hi'
+  sayThere:
+    runs-on: ubuntu-latest
+    steps:
+      - name: stepB
+        run: echo 'there'
